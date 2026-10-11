@@ -1,0 +1,13 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>ORIS week</title>
+<script>
+const t = new Date();
+const f = n => {
+  const d = new Date(t);
+  d.setDate(t.getDate() + n - ((t.getDay() + 6) % 7 + 1));
+  return d.toLocaleDateString('sv');
+};
+location.replace(`https://oris.ceskyorientak.cz/?date_from=${f(1)}&date_to=${f(7)}&sport=1&reg=0&all=1&mode=map&notcanc=0`);
+</script>
