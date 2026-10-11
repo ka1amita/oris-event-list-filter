@@ -11,5 +11,5 @@ const f = n => {
   d.setDate(t.getDate() + n - ((t.getDay() + 6) % 7 + 1));
   return d.toLocaleDateString('sv');
 };
-location.replace(`https://oris.ceskyorientak.cz/?date_from=${f(1)}&date_to=${f(7)}&sport=1&reg=0&all=1&mode=map&notcanc=0`);
+location.replace(`https://oris.ceskyorientak.cz/?date_from=${f(1)}&date_to=${f(7)}&repre=0&sport=0&reg=0&all=1&mode=map&notcanc=1`);
 </script>
