@@ -4,5 +4,5 @@
   "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",
-  "icon": "icon.png"
+  "icons": [{ "src": "icon.png", "sizes": "180x180", "type": "image/png" }]
 }
